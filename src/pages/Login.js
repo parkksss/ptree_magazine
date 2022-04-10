@@ -17,10 +17,10 @@ const Login = (props) => {
         </Grid>
         <Grid padding="16px 0px">
           <Input
-            label="패스워드"
-            placeholder="패스워드 입력해주세요."
+            label="비밀번호"
+            placeholder="비밀번호를 입력해주세요."
             _onChange={() => {
-              console.log("패스워드 입력했어!");
+              console.log("비밀번호 입력했어!");
             }}
           />
         </Grid>
