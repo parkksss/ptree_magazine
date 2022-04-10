@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Post from "../components/Post";
+import { Post } from "../components/components";
 
 const PostList = (props) => {
   return (

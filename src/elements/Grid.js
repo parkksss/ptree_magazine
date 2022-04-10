@@ -3,11 +3,12 @@ import styled from "styled-components";
 
 const Grid = (props) => {
 	// props로 설정해준 값 가지고 오기
-  const { is_flex, width, margin, padding, bg, children } = props;   
+  const { is_flex, width, maxWidth, margin, padding, bg, children } = props;   
 
   const styles = {
       is_flex: is_flex,
       width: width,
+      maxWidth: maxWidth,
       margin: margin,
       padding: padding,
       bg: bg,
@@ -25,6 +26,7 @@ Grid.defaultProps = {
   chidren: null,
   is_flex: false,
   width: "100%",
+  maxWidth: '1000px',
   padding: false,
   margin: false,
   bg: false,
@@ -33,6 +35,7 @@ Grid.defaultProps = {
 // 스타일 잡아주기
 const GridBox = styled.div`
   width: ${(props) => props.width};
+  max-width: ${(props) => props.maxWidth};
   height: 100%;
   box-sizing: border-box;
 	// 없을땐, 아예 안나오게
